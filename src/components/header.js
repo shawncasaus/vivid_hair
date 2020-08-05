@@ -1,32 +1,49 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import VerticalNav from "./vertical-nav"
+import Vivid_Image from "./vivid-image"
 import React from "react"
+
 
 const Header = ({ siteTitle }) => (
   <header
+    className=""
     style={{
-      background: `rebeccapurple`,
+      background: `#000`,
       marginBottom: `1.45rem`,
+      padding: `1rem`,
+      marginLeft: 0,
+      marginRight: 0
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    <div className="row">
+      <div
+        className="col-6 vivid-logo"
+        style={{
+          margin: `auto`,
+          maxWidth: 960,
+          textAlign: `left`
+        }}
+      >
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <Vivid_Image />
         </Link>
-      </h1>
+      </div>
+      <div className="col-6 nav-logo"
+           style={{
+             margin: `auto`,
+             paddingRight: `25px`,
+             textAlign: `right`,
+           }}
+      >
+          <VerticalNav />
+      </div>
     </div>
   </header>
 )
