@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import Vertical_Nav_Hamburger from "./vertical-nav-hamburger"
 import React from "react"
 

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Vivid Rein Hair`,
-    description: `Welcome to Vivid Rein Hair`,
+    description: `Boutique hair salon located in La Verne, California.`,
     author: `@shawncasaus`,
   },
   plugins: [
@@ -21,10 +21,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#695578`,
+        theme_color: `#695578`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/vivid-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

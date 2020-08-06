@@ -10,7 +10,6 @@ const Header = ({ siteTitle }) => (
     className=""
     style={{
       background: `#000`,
-      marginBottom: `1.45rem`,
       padding: `1rem`,
       marginLeft: 0,
       marginRight: 0

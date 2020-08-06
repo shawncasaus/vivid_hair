@@ -26,7 +26,7 @@ const Vertical_Nav_Hamburger = () => {
     }
   `)
 
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="button to expand vertical nav-bar"/>
 }
 
 export default Vertical_Nav_Hamburger
