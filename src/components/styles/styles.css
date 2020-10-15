@@ -1,7 +1,46 @@
+/*##########APPLICATION STYLES##########*/
+
 html,body {
     padding: 0; 
     margin: 0;
 }
+
+.dancing-script {
+    font-family: 'Merriweather', serif;  font-family: 'Pacifico', cursive;
+}
+
+.hyperLink:hover {
+  color: #fff !important;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+}
+
+@media screen and (max-width: 840px) {
+  .vertical-nav {
+    display: block !important;
+  }
+
+  .horizontal-nav {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .vertical-nav {
+    display: none !important;
+  }
+
+  .horizontal-nav {
+    display: block !important;
+  }
+}
+
+
+
+/*##########END APPLICATION STYLES##########*/
 
 /*##########NAV BAR STYLES##########*/
 
@@ -43,6 +82,20 @@ html,body {
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
+
+  .horizontal-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #695578;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .horizontal-content a:hover, .horizontal-content a:focus {
+    color: #f1f1f1;
+  }
   
   /* Position the close button (top right corner) */
   .overlay .closebtn {
@@ -50,6 +103,14 @@ html,body {
     top: 20px;
     right: 45px;
     font-size: 60px;
+  }
+
+  .sticky {
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -64,15 +125,59 @@ html,body {
 
 /*##########END NAV BAR STYLES##########*/
 
-/*##########NAV HERO STYLES##########*/
+/*##########HERO STYLES##########*/
+
+  .hero-content {
+    margin-top: 5rem;
+  }
 
   .my-hero {
     position: relative;
-    top: 0;
+    display: flex;
+    top: 126px;
     left: 0;
+    height: auto;
     min-width: 100%;
     /*min-height: 100%; */
     background-color: #43293d;
+  }
+
+  .hero_h1 {
+    font-size: 32px;
+  }
+
+  .hero_ul {
+    font-size: 22px;
+  }
+
+  .heroButton {
+    background-color: #000;
+    border: solid;
+    border-color: #695578;
+    color:  #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 0px;
+    opacity: 50%;
+    margin-top: 25px;
+  }
+
+  .heroButton:hover {
+    opacity: 100%;
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #695578 !important;
+  }
+
+  .heroButton:focus, .heroButton:active {
+    opacity: 50%;
+    background-color: #000 !important;
+    border-color: #695578 !important;
+    outline: none !important;
+    box-shadow: none;
   }
 
   @media screen and (max-width: 640px) {
@@ -83,6 +188,38 @@ html,body {
     .vintage-scissors {
       height: 480px !important;
     }
+
+    .hero-content {
+      margin-top: 4rem;
+    }
+
+    .hero_h1 {
+      font-size: 22px;
+    }
+
+    .hero_ul {
+      font-size: 14px;
+    }
+    
+    .heroButton {
+      font-size: 14px;
+      padding: 5px 20px;
+      margin-top: 15px;
+    }
   }
 
 /*##########END HERO STYLES##########*/
+
+/*##########HERO CONTENT STYLES##########*/
+
+.hero-content {
+  color: #b88db4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/*##########END HERO CONTNENT STYLES##########*/

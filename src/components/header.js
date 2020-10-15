@@ -1,16 +1,17 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import VerticalNav from "./vertical-nav"
+import HorizontalNav from "./horizontal-nav"
 import Vivid_Image from "./vivid-image"
 import React from "react"
 
 
 const Header = ({ siteTitle }) => (
   <header
-    className=""
+    className="sticky"
     style={{
       background: `#000`,
-      padding: `1rem`,
+      padding: `0.6rem`,
       marginLeft: 0,
       marginRight: 0
     }}
@@ -42,6 +43,7 @@ const Header = ({ siteTitle }) => (
            }}
       >
           <VerticalNav />
+          <HorizontalNav />
       </div>
     </div>
   </header>

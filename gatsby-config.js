@@ -30,5 +30,24 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Open Sans Condensed`,
+            variants: [`300`]
+          },
+          {
+            family: `Pacifico`, 
+            variants: [`400`]
+          },
+          {
+            family: `Merriweather`,
+            variants: [`400`]
+          }
+        ],
+      },
+    },
   ],
 }
