@@ -134,7 +134,7 @@ ul {
   .my-hero {
     position: relative;
     display: flex;
-    top: 126px;
+    top: 100px;
     left: 0;
     height: auto;
     min-width: 100%;
@@ -223,3 +223,55 @@ ul {
 }
 
 /*##########END HERO CONTNENT STYLES##########*/
+
+/*##########BODY STYLES##########*/
+
+.bodyDiv {
+  position: relative;
+  top: 100px;
+}
+
+/*##########END BODY STYLES##########*/
+
+/*##########FOOTER STYLES##########*/
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  background-color: #43293d;
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+.footerContent {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.footerContent ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.footerContent li {
+  float: left;
+}
+
+.footerContent li a {
+  display: block;
+  text-align: center;
+  padding: 22px;
+  text-decoration: none;
+  color: #b88db4;
+  font-size: 32px;
+}
+
+/*##########END FOOTER STYLES##########*/
