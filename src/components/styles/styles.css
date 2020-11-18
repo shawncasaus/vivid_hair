@@ -228,22 +228,59 @@ ul {
 
 .bodyDiv {
   position: relative;
-  top: 100px;
+  top: 0px;
 }
 
 /*##########END BODY STYLES##########*/
+
+/*##########ABOUT STYLES##########*/
+
+.about {
+  position: relative;
+  top: 100px;
+}
+
+
+/*##########END ABOUT STYLES##########*/
+
+/*##########SERVICES STYLES##########*/
+
+.services {
+  position: relative;
+  top: 100px;
+}
+
+/*##########END SERVICES STYLES##########*/
+
+/*##########CLIENTS STYLES##########*/
+
+.clients {
+  position: relative;
+  top: 100px;
+}
+
+/*##########END CLIENTS STYLES##########*/
+
+/*##########CONTACT STYLES##########*/
+
+.contact {
+  position: relative;
+  top: 100px;
+}
+
+/*##########END CONTACT STYLES##########*/
 
 /*##########FOOTER STYLES##########*/
 
 .footer {
   position: relative;
   left: 0;
-  bottom: -100px;
+  bottom: -200px;
   width: 100%;
-  background-color: #43293d;
+  background-color: #000000;
   color: white;
   text-align: center;
-  height: 100px;
+  height: 125px;
 }
 
 .footerContent {
@@ -253,7 +290,7 @@ ul {
 }
 
 .footerContent ul {
-  height: 100%;
+  height: 75%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -272,6 +309,18 @@ ul {
   text-decoration: none;
   color: #b88db4;
   font-size: 32px;
+}
+
+.footerText {
+  color: #b88db4;
+}
+
+.footerText a {
+  color:  #ffffff !important;
+}
+
+.footerText p {
+  margin: 0px !important;
 }
 
 /*##########END FOOTER STYLES##########*/
