@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
   
 import Layout from "../components/layout"
-import Vivid_Image from "../components/vivid-image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import About from "../components/about"
@@ -10,6 +9,7 @@ import Services from "../components/services"
 import Clients from "../components/clients"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
+import Vivid_Image from "../components/vivid-image"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faFacebook, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
@@ -26,7 +26,7 @@ const IndexPage = () => (
       <Contact />
     </div>
 
-    <Footer />
+
   </Layout>
 )
 

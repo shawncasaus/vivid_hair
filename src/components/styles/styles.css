@@ -238,6 +238,69 @@ ul {
 .about {
   position: relative;
   top: 100px;
+  height: 880px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.aboutContent {
+  height: 100%;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 35px;
+}
+
+.aboutContent h1 {
+  font-weight: normal;
+  font-style: normal; 
+  font-size: 48px;
+  color: #43293d;
+}
+
+.aboutContent p {
+  font-weight: normal;
+  font-style: normal; 
+  font-size: 32px;
+  color:#695578;
+}
+
+.salonImageContainer {
+  text-align: center;
+  max-width: 400px;
+  height: auto;
+  padding: 0;
+  margin: auto;
+  margin-top: 25px;
+  background-color: #f7f7e8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.salon-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  border: 5px solid #f7f7e8;
+  border-bottom: 60px solid #f7f7e8;
+}
+
+.grayscale {filter: grayscale(100%);}
+.sepia {filter: sepia(100%);}
+
+@media screen and (max-width: 640px) {
+  .aboutContent h1 {
+    font-weight: normal;
+    font-style: normal; 
+    font-size: 32px;
+    color: #43293d;
+  }
+  
+  .aboutContent p {
+    font-weight: normal;
+    font-style: normal; 
+    font-size: 16px;
+    color:#695578;
+  }
 }
 
 
@@ -248,6 +311,10 @@ ul {
 .services {
   position: relative;
   top: 100px;
+  height: 880px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
 }
 
 /*##########END SERVICES STYLES##########*/
@@ -257,6 +324,9 @@ ul {
 .clients {
   position: relative;
   top: 100px;
+  height: 880px;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 /*##########END CLIENTS STYLES##########*/
@@ -266,6 +336,9 @@ ul {
 .contact {
   position: relative;
   top: 100px;
+  height: 880px;
+  background-color: #695578;
+  width: 100%;
 }
 
 /*##########END CONTACT STYLES##########*/
@@ -275,7 +348,7 @@ ul {
 .footer {
   position: relative;
   left: 0;
-  bottom: -200px;
+  bottom: -100px;
   width: 100%;
   background-color: #000000;
   color: white;

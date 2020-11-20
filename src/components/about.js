@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutContent from './about-content'
 
 class About extends React.Component {
     constructor(props) {
@@ -9,9 +10,7 @@ class About extends React.Component {
 
         return (
             <div className="about">
-                <div className="aboutContent">
-                    <h1>This is the about section</h1>
-                </div>
+                <AboutContent />
             </div>
         )
     }
