@@ -6,11 +6,41 @@ html,body {
 }
 
 .dancing-script {
-    font-family: 'Merriweather', serif;  font-family: 'Pacifico', cursive;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.xanh-mono {
+  font-family: 'Xanh Mono', monospace;
+}
+
+.vidaloka {
+  font-family: 'Vidaloka', serif;
+}
+
+.arapey {
+  font-family: 'Arapey', serif;
+}
+
+.crimson-text {
+  font-family: 'Crimson Text', serif;
+}
+
+.playfair-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.eb-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.hyperLink {
+  transition: width 2s, height 4s;
+  transition-timing-function: linear;
 }
 
 .hyperLink:hover {
   color: #fff !important;
+  font-size: 30px;
 }
 
 ul {
@@ -142,12 +172,23 @@ ul {
     background-color: #43293d;
   }
 
+  @keyframes colorShift {
+    from {color: #f7aed8;}
+    to {color:  #695578;}
+  }
+
   .hero_h1 {
-    font-size: 32px;
+    font-size: 62px;
+    color:#f7aed8;
+    animation-name: colorShift;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   .hero_ul {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .heroButton {
@@ -169,7 +210,7 @@ ul {
     opacity: 100%;
     background-color: #000 !important;
     border-color: #000 !important;
-    color: #695578 !important;
+    color:#f7aed8 !important;
   }
 
   .heroButton:focus, .heroButton:active {
@@ -194,7 +235,7 @@ ul {
     }
 
     .hero_h1 {
-      font-size: 22px;
+      font-size: 32px;
     }
 
     .hero_ul {
@@ -261,7 +302,7 @@ ul {
 .aboutContent p {
   font-weight: normal;
   font-style: normal; 
-  font-size: 32px;
+  font-size: 28px;
   color:#695578;
 }
 
@@ -280,12 +321,13 @@ ul {
   width: 100%;
   height: 100%;
   margin-bottom: 0;
-  border: 5px solid #f7f7e8;
-  border-bottom: 60px solid #f7f7e8;
+  border: 5px solid #fff;
+  /*border-bottom: 60px solid #f7f7e8;*/
 }
 
 .grayscale {filter: grayscale(100%);}
 .sepia {filter: sepia(100%);}
+.contrast {filter: contrast(100%);}
 
 @media screen and (max-width: 640px) {
   .aboutContent h1 {

@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Vivid_Image = () => {
+const Vivid_Image = () => {  
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "vivid-logo.png" }) {

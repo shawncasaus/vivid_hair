@@ -4,8 +4,8 @@ import salon from '../images/salonImage.jpg'
 function AboutContent() {
     return (
     <div className="aboutContent">
-        <h1 className="dancing-script">About Us</h1>
-        <p className="dancing-script">
+        <h1 className="arapey">About Us</h1>
+        <p className="xanh-mono">
             Vivid Rein Hair is a private luxury suite that offers specialty color services, hair styling, hair extensions 
             and haircuts for women, men and all people in between. Serein (Owner) is a Pravana certified colorist who works 
             with vivids, neutrals, balayage and various other color techniques that inspire beautiful creative looks! 
@@ -14,7 +14,7 @@ function AboutContent() {
             We pride ourselves on maintaining a safe, clean inviting atmosphere for all. 
         </p>
         <div className="salonImageContainer">
-            <img className="salon-image sepia" src={salon} alt="picture of vivid salon with halloween decorations and a fake ghost in the corner" />
+            <img className="salon-image contrast" src={salon} alt="picture of vivid salon with halloween decorations and a fake ghost in the corner" />
         </div>
     </div>)
 }

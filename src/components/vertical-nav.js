@@ -32,7 +32,7 @@ class VerticalNav extends React.Component {
                     <a href="#" className="closebtn" onClick={this.closeNav}>&times;</a>
                 
                     //Overlay content
-                    <div className="overlay-content">
+                    <div className="xanh-mono overlay-content">
                         <a href="#">About</a>
                         <a href="#">Services</a>
                         <a href="#">Clients</a>

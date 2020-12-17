@@ -45,6 +45,10 @@ module.exports = {
           {
             family: `Merriweather`,
             variants: [`400`]
+          },
+          {
+            family: `Dancing Script`,
+            variants: [`400`]
           }
         ],
       },

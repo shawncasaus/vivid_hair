@@ -68,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Crimson+Text&family=Dancing+Script&family=EB+Garamond&family=Playfair+Display&family=Vidaloka&family=Xanh+Mono&display=swap" rel="stylesheet"></link>
+    </Helmet>
   )
 }
 

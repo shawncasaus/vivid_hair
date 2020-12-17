@@ -11,7 +11,7 @@ class HorizontalNav extends React.Component {
         return(
             <div className="horizontal-nav" style={{display: "block"}}>
                 <div className="horizontal" style={{width: "100%", display: "block", textAlign: "center"}}>
-                    <ul className="nav horizontal-content" style={{float: "right"}}>
+                    <ul className="arapey nav horizontal-content" style={{float: "right"}}>
                         <li  className="nav-item"><a href="#" style={{verticalAlign: "center"}}>About</a></li>
                         <li  className="nav-item"><a href="#" style={{verticalAlign: "center"}}>Services</a></li>
                         <li  className="nav-item"><a href="#" style={{verticalAlign: "center"}}>Clients</a></li>
