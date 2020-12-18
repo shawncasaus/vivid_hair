@@ -48,6 +48,27 @@ ul {
   margin: auto;
 }
 
+@keyframes colorShift {
+  from {color: #f7aed8;}
+  to {color:   #43293d;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0%}
+  to {opacity: 100%;}
+}
+
+@keyframes rotation {
+  from 
+  {
+    transform: rotate(0deg);
+  }
+  to 
+  {
+    transform: rotate(359deg);
+  }
+}
+
 @media screen and (max-width: 840px) {
   .vertical-nav {
     display: block !important;
@@ -159,6 +180,20 @@ ul {
 
   .hero-content {
     margin-top: 5rem;
+    opacity: 100%;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+  }
+
+  .vintage-scissors {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
   }
 
   .my-hero {
@@ -170,11 +205,6 @@ ul {
     min-width: 100%;
     /*min-height: 100%; */
     background-color: #43293d;
-  }
-
-  @keyframes colorShift {
-    from {color: #f7aed8;}
-    to {color:  #695578;}
   }
 
   .hero_h1 {
@@ -204,13 +234,16 @@ ul {
     border-radius: 0px;
     opacity: 50%;
     margin-top: 25px;
+    transition: width 2s, height 4s;
+    transition-timing-function: linear;
   }
 
   .heroButton:hover {
-    opacity: 100%;
     background-color: #000 !important;
-    border-color: #000 !important;
+    border-color: #f7aed8 !important;
     color:#f7aed8 !important;
+    padding: 18px 36px;
+    font-size: 24px;
   }
 
   .heroButton:focus, .heroButton:active {
@@ -290,6 +323,11 @@ ul {
   text-align: center;
   margin: auto;
   padding: 35px;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
 .aboutContent h1 {
@@ -297,29 +335,40 @@ ul {
   font-style: normal; 
   font-size: 48px;
   color: #43293d;
+  animation-name: colorShift;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .aboutContent p {
   font-weight: normal;
   font-style: normal; 
-  font-size: 28px;
+  font-size: 26px;
+  padding-bottom: 30px;
   color:#695578;
 }
 
 .salonImageContainer {
+  position: relative;
   text-align: center;
   max-width: 400px;
   height: auto;
   padding: 0;
   margin: auto;
-  margin-top: 25px;
   background-color: #f7f7e8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
 .salon-image {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   margin-bottom: 0;
   border: 5px solid #fff;
   /*border-bottom: 60px solid #f7f7e8;*/
@@ -329,19 +378,49 @@ ul {
 .sepia {filter: sepia(100%);}
 .contrast {filter: contrast(100%);}
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1300px) {
   .aboutContent h1 {
-    font-weight: normal;
-    font-style: normal; 
-    font-size: 32px;
-    color: #43293d;
+    font-size: 42px;
   }
   
   .aboutContent p {
-    font-weight: normal;
-    font-style: normal; 
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .aboutContent h1 {
+    font-size: 36px;
+  }
+  
+  .aboutContent p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .aboutContent h1 {
+    font-size: 32px;
+  }
+  
+  .aboutContent p {
     font-size: 16px;
-    color:#695578;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .aboutContent h1 {
+    font-size: 28px;
+  }
+  
+  .aboutContent p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .salonImageContainer {
+    visibility: hidden;
   }
 }
 
