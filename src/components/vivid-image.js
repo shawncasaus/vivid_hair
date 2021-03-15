@@ -26,7 +26,7 @@ const Vivid_Image = () => {
     }
   `)
 
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Vivid Rein Hair Logo" fadeIn="true"/>
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Vivid Rein Hair Logo" fadeIn={true} />
 }
 
 export default Vivid_Image

@@ -20,7 +20,7 @@ class Hero_Content extends React.Component {
                   <li>Color Correction</li>
                   <li>Hair Extension</li>
                 </ul>
-                <button type="button" className="btn btn-primary heroButton" style={{}}><a className="arapey button">Book Now</a></button>
+                <button type="button" className="btn btn-primary heroButton" style={{}}><a href="https://square.site/book/DRG254TTPA0CY/vivid-rein-hair-la-verne-ca" className="" style={{color: "inherit", textDecoration: 'none'}}>Book Now</a></button>
             </div>
         </div>
     )
