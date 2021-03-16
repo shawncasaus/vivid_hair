@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import services from '../data/services'
+import ScrollElement from './scroll-element'
+import ScrollView from './scroll-view'
 
 class Services extends React.Component {
     constructor(props) {
